@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="/deleteTypeUser" method="post">
+            <div>
+                <!-- Utilize o atributo 'value' para exibir o valor dinâmico -->
+                <label for="ID:">ID:</label>
+                <input type="text" name="queryID" value="{{ queryID }}" readonly>
+
+                <br>
+
+                <label for="Nome">Nome:</label>
+                <input type="text" name="queryName" value="{{ queryName }}" readonly>
+
+                <br>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

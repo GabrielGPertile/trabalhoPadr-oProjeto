@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p>ID: {{queryID}} </p>
+            <p>Name: {{queryName}} </p>
+
+            <div>
+                <p>Formulario para alteração!</p>
+
+                <form action="/updateTypeUser" method="post">
+
+                    <label for="ID:">ID:</label>
+                    <input type="text" name="queryID" value="{{ queryID }}" readonly>
+                    
+                    <br>   
+                    
+                    <label for="Nome:">Nome:</label>
+                    <input type="text" name="queryNameUpdate" value="{{ queryName }}">
+
+                    <br>
+
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+
+                </form>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
